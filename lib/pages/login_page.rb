@@ -13,13 +13,4 @@ class LoginPage
     self.password = password
     login
   end
-  
-  def login_page_links
-    self.phishing = phishing
-    self.password_strength = password_strength
-  end
-    
-    
-    
-
 end

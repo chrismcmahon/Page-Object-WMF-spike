@@ -8,7 +8,7 @@ describe "Logging into the system" do
       #@current_page.text.should include "Welcome foo"
       @current_page.text.should include "Secure your account"
       @current_page.text.should include "phishing"
-      @current_page.login_page_links.should include "phishing"
+      @current_page.phishing.should be_empty
     end
   end
 
