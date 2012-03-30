@@ -9,6 +9,8 @@ describe "Logging into the system" do
       @current_page.text.should include "Secure your account"
       @current_page.text.should include "phishing"
       @current_page.phishing.should be_empty
+      @current_page.text.should include "Not to be confused with"
+      @current_page.back
     end
   end
 
