@@ -15,3 +15,11 @@ class LoginPage
     login
   end
 end
+
+class BogusPage
+  include PageObject
+  
+  page_url 'https://en.wikipedia.org/wiki/Bogus_page'
+  link(:search, :link_text => 'search for Bogus page in Wikipedia')
+  link(:search2, :link_text => 'Search for "Bogus page"')
+end
