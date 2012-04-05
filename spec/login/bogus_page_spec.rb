@@ -10,7 +10,7 @@ describe "Navigate to bogus page" do
     end
   end
   
-  context "follow Create New Article links" do
+  context "follow Create New Article search links" do
     it "should follow all the defined links" do 
       visit_page(BogusPage)
       @current_page.search.should be_empty

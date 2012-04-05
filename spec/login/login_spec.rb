@@ -20,13 +20,22 @@ describe "Logging into the system" do
     end
   end
   
+  context "check login page links" do
+    it "should demonstrate all the defined links exist" do 
+      visit_page(LoginPage)
+      @current_page.phishing_element.should be_true
+      visit_page(LoginPage)
+      @current_page.password_strength_element.should be_true
+    end
+  end
+  
   context "visit login page links" do
     it "should follow all the defined links" do 
       visit_page(LoginPage)
-      @current_page.phishing.should be_empty
+      @current_page.phishing.should be_true
       @current_page.text.should include "Not to be confused with"
       visit_page(LoginPage)
-      @current_page.password_strength.should be_empty
+      @current_page.password_strength.should be_true
       @current_page.text.should include "measure of the effectiveness"
     end
   end
