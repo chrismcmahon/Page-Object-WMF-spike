@@ -21,6 +21,11 @@ describe "check Edit tools" do
     @current_page.article_text_element.send_keys :arrow_right, :arrow_right, :arrow_right, :arrow_right, :arrow_right
     @current_page.embedded_element.click
     @current_page.article_text.should include "[[File:Example.jpg]]"
+    #check Signature and timestamp
+    @current_page.article_text_element.send_keys :arrow_right, :arrow_right, :arrow_right, :arrow_right, :arrow_right
+    @current_page.signature_element.click
+    @current_page.article_text.should include "--~~~~"
+    
     
   end
 end
