@@ -1,3 +1,11 @@
 potential architecture for browser testing at WMF
 
-to run, do 'rake -t' at the top directory
+to run, do the following:
+
+    bundle
+    rake
+
+
+at the top directory.  Bundle will ensure you have all of the correct gems and the rake command will run the tests.
+
+
