@@ -7,8 +7,9 @@ describe "Manipulating Special:UploadWizard" do
   context "Log in is required" do
     it "should have a link to log in" do
       visit_page(UploadWizardPage)
-        @current_page.logged_in 
-        @current_page.login_with('user','pass')
+        @current_page.logged_in
+        @current_page.text.should include "Log in / create account" 
+        on_page(LoginPage).login_with('user', 'pass')
       end
     end
     
