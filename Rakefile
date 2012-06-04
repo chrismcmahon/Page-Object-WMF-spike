@@ -4,6 +4,7 @@ require 'rspec/core/rake_task'
 RSpec::Core::RakeTask.new(:spec) do |spec|
   spec.ruby_opts = "-I lib:spec"
   spec.pattern = 'spec/**/*_spec.rb'
+  spec.rspec_opts = ["-r rspec-extra-formatters", "-f JUnitFormatter", '-o results.xml']
 end
 
 RSpec::Core::RakeTask.new(:login_spec) do |spec|
