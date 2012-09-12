@@ -19,4 +19,8 @@ potential architecture for browser testing at WMF
 
 at the top directory.  Bundle will ensure you have all of the correct gems and the rake command will run the tests.
 
+## help for ruby novices ##
 
+* [Ruby](http://www.ruby-doc.org/docs/ProgrammingRuby/)
+* [Rspec](http://rubydoc.info/)
+* [Page Object Model, Ruby implementation](https://github.com/cheezy/page-object)
