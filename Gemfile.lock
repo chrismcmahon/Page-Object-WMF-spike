@@ -12,7 +12,7 @@ GEM
     page-object (0.6.8)
       selenium-webdriver (>= 2.22.1)
       watir-webdriver (>= 0.6.1)
-    rake (0.9.2.2)
+    rake (12.3.3)
     require_all (1.2.1)
     rspec (2.10.0)
       rspec-core (~> 2.10.0)
